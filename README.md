@@ -28,8 +28,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: https://github.com/mrxshinji/Interactive-card-form
-- Live Site URL: https://mrxshinji.github.io/Interactive-card-form
+- Solution URL: https://github.com/mrxshinji/mrxshinji-Intro-with-dropdown-navi
+- Live Site URL: https://mrxshinji.github.io/mrxshinji-Intro-with-dropdown-navi
 
 ## My process
 
