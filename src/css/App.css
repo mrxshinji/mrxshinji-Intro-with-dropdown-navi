@@ -35,7 +35,6 @@ The designs were created to the following widths:
 
  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
-
  * {
   padding: 0;
   margin: 0;
@@ -43,6 +42,10 @@ The designs were created to the following widths:
   font-family: 'Epilogue', sans-serif;
   font-weight: 500;
   font-size: 18px;
+}
+
+body {
+  background-color: var(--AlmostWhite);
 }
 
 #root {
@@ -68,19 +71,37 @@ The designs were created to the following widths:
   height: 40px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 1rem 0 3rem 0;
 }
 
 .navbar {
   align-self: flex-end;
+  height: 100%;
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap:2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 #nav-menu {
   display: none;
   gap: 3rem;
+}
+
+.buttons {
+  display: none;
 }
 
 .toggleBtn {
@@ -97,7 +118,6 @@ The designs were created to the following widths:
 .nav-item {
   list-style: none;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -110,6 +130,12 @@ The designs were created to the following widths:
 a:hover,
 a:focus {
   filter: brightness(.4)
+}
+
+button {
+  width: 5rem;
+  height: 1.5rem;
+  display: inline-block;
 }
 
 /* ------------------------------- Sidebar Part ------------------------------- */
@@ -127,8 +153,6 @@ a:focus {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  
-  overflow: hidden;
 }
 
 .slide-enter {
@@ -220,44 +244,19 @@ a:focus {
 .nav-drop {
   position: absolute;
   border-radius: 10px;
-  border: 1px solid var(--MediumGray);
+  /* border: 1px solid var(--MediumGray); */
   z-index: 5;
   background-color: var(--AlmostWhite);
   padding: 0 .5rem 1rem .5rem;
   margin-top: 2rem;
+  box-shadow: .3rem .3rem 1rem 1rem rgba(0,0,0,0.05);
 }
 
 #nav-menu .nav-item {
   justify-content: flex-end;
 }
 
-/* ------------------------------- Navbar Dropdown part ------------------------------- */
-
-
-@media screen and (min-width: 860px){
-  .container {
-    height: auto;
-  }
-  .header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-
-  .navbar {
-    align-self: center;
-    gap: 2rem;
-  }
-
-  #nav-menu {
-    display: flex;
-  }
-
-  #nav-btn {
-    display: none;
-  }
-}
+/*  Navbar Dropdown part --------------------------- */
 
 /* =============================== Header Section =============================== */
 
@@ -319,9 +318,27 @@ section {
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--AlmostBlack);
-  filter:opacity(0.8)
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
 }
+
+.nav-item button {
+  display: inline-block;
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+  margin-bottom: 0;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--AlmostWhite);
+  filter:brightness(0.8)
+ }
+
+ #Login {
+  border: 0px;
+ }
+
 
 .client {
   height: 38px;
@@ -336,7 +353,45 @@ section {
   transform: scale(.9);
 }
 
-@media screen and (min-width: 830px){
+/* =============================== Intro Section =============================== */
+
+
+/* =============================== Media Section =============================== */
+@media screen and (min-width: 860px){
+
+  /*  Navbar Media --------------------------- */
+  .container {
+    height: auto;
+  }
+
+  .header {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+
+  #nav-menu {
+    display: flex;
+  }
+
+  .buttons {
+    display: inline-block;
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+    margin-bottom: 0;
+  }
+
+  .buttons:hover,
+  .buttons:focus {
+    background-color: var(--AlmostWhite);
+    filter:brightness(0.8)
+  }
+
+  #nav-btn {
+    display: none;
+  }
+
+  /*  Intro Media part --------------------------- */
   #intro-section {
     --sectionHeight: calc(100vh - 200px);
     height: var(--sectionHeight);
@@ -395,6 +450,7 @@ section {
   }
 }
 
+/*  1360 screen width part --------------------------- */
 @media screen and (min-width: 1360px){
   .bg-pic picture img {
     --pictureHeight: 700px;
@@ -402,7 +458,4 @@ section {
     height: var(--pictureHeight);
     max-height: 700px;
   }
-
 }
-
-/* =============================== Intro Section =============================== */

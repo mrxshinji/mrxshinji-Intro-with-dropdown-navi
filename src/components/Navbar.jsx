@@ -26,7 +26,11 @@ export default function Navbar() {
           <NavItem title="Careers" icon={false} />
           <NavItem title="About" icon={false} />
         </NavMenu>
-        <NavBtn icon={<IconMenu />} /> 
+        <div className="user-buttons">
+          <Button name="Login" />
+          <Button name="Register" />
+          <NavBtn icon={<IconMenu />} /> 
+        </div> 
       </nav>
     )
   }
@@ -93,6 +97,8 @@ export default function Navbar() {
             </NavItem>
             <NavItem title="Careers" icon={false} />
             <NavItem title="About" icon={false} />
+            <li className="nav-item"><Button name="Login" /></li>
+            <li className="nav-item"><Button name="Register" /></li>
             </ul>
         </div>
         )
@@ -182,6 +188,14 @@ export default function Navbar() {
       </a>
     </li>
     )
-  }
+}
   
   /* =============================== Dropdown Section =============================== */
+
+  function Button(props) {
+    return (
+      <button className="buttons btn" href={props.link} id={props.name} name={props.name} >
+        {props.name}
+      </button>
+    )
+  }
