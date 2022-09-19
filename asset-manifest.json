@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mrxshinji-Intro-with-dropdown-navi/static/css/main.3a49ac26.css",
-    "main.js": "/mrxshinji-Intro-with-dropdown-navi/static/js/main.1cce5301.js",
+    "main.css": "/mrxshinji-Intro-with-dropdown-navi/static/css/main.bd502137.css",
+    "main.js": "/mrxshinji-Intro-with-dropdown-navi/static/js/main.1550597b.js",
     "static/media/image-hero-desktop.png": "/mrxshinji-Intro-with-dropdown-navi/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/mrxshinji-Intro-with-dropdown-navi/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
     "static/media/client-databiz.svg": "/mrxshinji-Intro-with-dropdown-navi/static/media/client-databiz.d1e7955f847e089183caf61eb54feb51.svg",
@@ -18,11 +18,11 @@
     "static/media/icon-menu.svg": "/mrxshinji-Intro-with-dropdown-navi/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/mrxshinji-Intro-with-dropdown-navi/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/mrxshinji-Intro-with-dropdown-navi/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.3a49ac26.css.map": "/mrxshinji-Intro-with-dropdown-navi/static/css/main.3a49ac26.css.map",
-    "main.1cce5301.js.map": "/mrxshinji-Intro-with-dropdown-navi/static/js/main.1cce5301.js.map"
+    "main.bd502137.css.map": "/mrxshinji-Intro-with-dropdown-navi/static/css/main.bd502137.css.map",
+    "main.1550597b.js.map": "/mrxshinji-Intro-with-dropdown-navi/static/js/main.1550597b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a49ac26.css",
-    "static/js/main.1cce5301.js"
+    "static/css/main.bd502137.css",
+    "static/js/main.1550597b.js"
   ]
 }
